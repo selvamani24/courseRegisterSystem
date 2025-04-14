@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Register a course</title>
+        <style>
+            body {
+                background-color: black;
+                text-align: center; 
+            }
+
+            form {
+                margin:  auto;
+                padding: 20px;
+                width: 400px; 
+                background-color: #fff;
+            }
+
+            input, select, button {
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white; 
+                font-weight: bold;
+                font-size: medium;
+                cursor: pointer; 
+            }
+
+            button:hover {
+                background-color: #104212; 
+            }
+        
+        </style>
+
+    </head>
+    <body>
+        <h1 style="color: yellow;">Create an exciting Course</h1>
+
+        <form action="http://localhost:8080/courses/addCourse" method="post">
+        
+			<label for="name">Enter course Id:</label><br>
+            <input type="text" name="courseId"><br><br>
+                    
+            <label for="name">Enter course name:</label><br>
+            <input type="text" name="courseName"><br><br>
+
+            <label for="name">Enter the trainer:</label><br>
+            <input type="text" name="trainer"><br><br>
+
+            <label for="course">Choose a duration in weeks</label><br>
+            <select id="course" name="durationInWeeks">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+
+    </body>
+</html>
