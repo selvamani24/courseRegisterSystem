@@ -1,4 +1,4 @@
-# Project name - Course Reggisteration System
+# Project name - Course Registeration System
 >User interface such as Four button
 >first button - add course
 >second button - available course
